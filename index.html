@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pomodoro-app">
+        <div id="clock-container">
+            <div id="timer-label">Session</div>
+            <div id="time-left">25:00</div>
+            <button id="start_stop" class="btn">Start/Stop</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+        
+        <div id="settings-container">
+            <div class="setting">
+                <div id="session-label">Session Length</div>
+                <button id="session-decrement" class="setting-btn">-</button>
+                <div id="session-length" class="setting-display">25</div>
+                <button id="session-increment" class="setting-btn">+</button>
+            </div>
+
+            <div class="setting">
+                <div id="break-label">Break Length</div>
+                <button id="break-decrement" class="setting-btn">-</button>
+                <div id="break-length" class="setting-display">5</div>
+                <button id="break-increment" class="setting-btn">+</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="beep" src="beep.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
